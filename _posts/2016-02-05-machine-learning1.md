@@ -30,7 +30,8 @@ updated: 2016-02-05 14:18
 ### 後饋（Back Propagation）
 學習的過程是以不斷的迭代（Iteration）來達到錯誤最小化 ，每一次迭代時把輸出的結果比較目標資料，把差距作為成本（Cost），有了成本後再利用後饋算法把每層的 Perceptrons 權值作更新。
 
-Network(神經網絡)](http://indiejoseph.github.io/assets/images/ml1_2.png)
+![線性代數（Linear Algebra）](http://indiejoseph.github.io/assets/images/ml1_2.png)
+
 圖二
 
 ### 線性代數（Linear Algebra）
