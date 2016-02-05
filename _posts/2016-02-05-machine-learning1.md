@@ -5,6 +5,8 @@ updated: 2016-02-05 14:18
 
 # 簡紹
 
+![人工智能入門](http://indiejoseph.github.io/assets/images/ml1_0.png)
+
 這個系列主要是為一些有興趣人工智能，和想了解這個技術如何可應用到他們 Startup 的人而設，主要著重於應用層面。
 
 業界中多數用 Machine Learning 這個詞，那跟 AI 有什麼分別呢？其實 Machine Learning 是 AI(Artificial Intelligence) 的其中一種，由機器自己學習去解決問題，現今 AI 的定義已變了不少，為解決一些特定任務如人面辨識、Spam filter、無人駕駛等都可說是 AI，那電影中會消滅人類的那種現可以叫作 Super Intelligence 或 Artificial general intelligence (AGI) 都是接近或超越人類智慧等級的機器。
