@@ -3,9 +3,9 @@ title: 人工智能入門
 updated: 2016-02-05 14:18
 ---
 
-# 簡紹
-
 ![人工智能入門](http://indiejoseph.github.io/assets/images/ml1_0.png)
+
+# 簡紹
 
 這個系列主要是為一些有興趣人工智能，和想了解這個技術如何可應用到他們 Startup 的人而設，主要著重於應用層面。
 
