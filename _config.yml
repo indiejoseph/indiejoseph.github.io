@@ -1,0 +1,54 @@
+# Site Info
+title:              "Joseph Cheng's Blog"
+description:        "Welcome to my blog."
+google_verify:      sFMGJ2wDq_mK6Uo9DiLErhx8BwzfjOIxzRLmF0hzL-o # Put your Google Verification here
+google_analytics:   UA-73297023-1 # Put your Google Analytics code
+
+# Author Info
+author_name:        "Joseph Cheng"
+author_email:       josephcheng@gmail.com
+author_gravatar:    42a16b4a545df1707f01d603d36b54d1 # Gravatar md5 hash
+
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /blog/:title # Post permalink
+timezone:           Asia/Hong_Kong # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Site Build
+highlighter:        pygments
+#markdown:           redcarpet
+#redcarpet:
+#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+
+compress_html:
+    clippings:      all
+    ingore:
+        envs:       [ "test" ]
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
