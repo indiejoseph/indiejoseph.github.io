@@ -1,12 +1,12 @@
 ---
-title: 人工智能入門
+title: 人工智能入門（一）
 image: http://indiejoseph.github.io/assets/images/ml1_0.png
 description: 這個系列主要是為一些有興趣人工智能，和想了解這個技術如何可應用到他們 Startup 的人而設，主要著重於應用層面。
 updated: 2016-02-05 14:18
 comments: true
 ---
 
-![人工智能入門](http://indiejoseph.github.io/assets/images/ml1_0.png)
+![人工智能入門（一）](http://indiejoseph.github.io/assets/images/ml1_0.png)
 
 # 簡介
 
@@ -15,6 +15,7 @@ comments: true
 業界中多數用 Machine Learning 這個詞，那跟 AI 有什麼分別呢？其實 Machine Learning 是 AI(Artificial Intelligence) 的其中一種，由機器自己學習去解決問題，現今 AI 的定義已變了不少，為解決一些特定任務如人面辨識、Spam filter、無人駕駛等都可說是 AI，那電影中會消滅人類的那種現可以叫作 Super Intelligence 或 Artificial general intelligence (AGI) 都是接近或超越人類智慧等級的機器。
 
 這兩年是人工智能競賽最激烈的時代，有兩個重要因素，第一是幾個龍頭公司都 open source了自己的 framework 為了搶得業界標準地位，大家都知 open source 的世界多人用的 framework 才會多人 contribute, 這一點是非常重要，因現在多人研究這個範疇，相關的 paper 數量大增，新的 deep learning architecture 越來越多， open source 了的 framework 才有望成為研究員的主要工具，去為 framework 加入更多 algorithm；另一點是硬件的配合，GPU 成了催化劑把運算速度大大提高，Nvidia 看準這塊肥肉推出了針對 Machine Learning 的怪獸級顯示卡, 還有 Amazon 的 GPU Cluster 也居功不少。
+
 
 # Neural Network(神經網絡)
 
@@ -54,6 +55,7 @@ Deep Learning 的網絡種類很多，把字拆可解作用特別的學習（Lea
 假如你現在就想動手做，在 Github 上有不少 project 可以參考，不論你打算用那一個 framework 都好，你都要知道那個作參考 project 的目的，因為上面大多都是為研究或測試目的，十居其九都是一些跟 paper implement 出來的 project 和 benchmark 的 project，這和應用層面是兩碼子的事，那應該怎樣去把 Deep Learning 項目整合到你的項目呢？
 基本上神經網絡訓練好後我們需要的只是它們的權重數值（Weights） 或一些 parameters，那之後不論在手機上或 server 上都是用這推權重值去解決問題。
 訓練方法會因應用的目的分成 Offline 或是 Online Learning，Offline 即是你灌一堆資料讓神經網絡埋頭苦幹幾千次迭代後把成果作成應用，但你想更新它時，你只可把新資料再灌它一次了；Online 是指網絡會在應用中去學習，但未必會更新整個網絡，可能只更新特定某幾層的權重。
+
 
 # 預告
 下一編的內容是介紹不同類型的 Deep Learning 神經網絡及 Machine Learning 如何作自然語言處理 NLP（Natural Language Processing）和怎樣讓電腦明白我們的語言。
