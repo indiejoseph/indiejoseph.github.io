@@ -21,8 +21,11 @@ comments: true
 最常用的網絡，衍生的網絡架構非常之多，但大同少異，它的強項都是空間性任務，即是分類。常用的有：
 
 - Multiple Layers Perceptron (MLP)
+
 - Convolutional Neural Network (CNN)
+
 - Restricted Boltzmann Machine (RBM)
+
 - Stacked Demonising Autoencoder (SdA)
 
 ### 時間性 Temporal：「遞歸神經網絡 Recurrent Neural Network (RNN)」
@@ -30,12 +33,14 @@ comments: true
 常用的有：
 
 - Gated Recurrent Unit (GRU)
+
 - Long Short Term Memory
 
 ### 聚類 Clustering：「聯想記憶 Associative Memories」
 就如其名都是和記憶有關的任務，它可以參考你給它的輸入值從訓練後的記憶中找出近似的值。
 
 - Self-Organising Maps (SOM)
+
 - Bidirectional associative memory (BAM)
 
 它們是可以互相組合成其他的網絡如 Hopfield Network 是種 RNN + Associative Memory 可作時間性的記憶判定、而 Echo State Network / Liquid State Machine 的 cell 是一堆隨機 RNN + FNN 可以應付 Spatio-Temporal Pattern。
