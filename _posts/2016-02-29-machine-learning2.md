@@ -12,9 +12,9 @@ comments: true
 雖我的標題有點取巧（因’人工智能’這個 keywords 看似對 SEO 有幫助 XD），其實我說的都只是人工智能的其中一類（神經網絡），它是人工智能的其中一大流派，師承 [Connectionism](https://en.wikipedia.org/wiki/Connectionism)，近年的火熱的 Deep Learning 更是把這派發揚光大，令科網大老們都加入這一流，那我們當然是選一個大的幫派去學藝。
 筆者這些年在研究的是自然語言處理 NLP（Natural Language Processing），因當時覺得要做人工智能最少要先令電腦明白我們的語言，早幾年前神經網絡還未非常流行（雖神經網絡早在1943年已問世，直到最近幾年才有突破），那時用的都是一些  [Statistical](https://en.wikipedia.org/wiki/Statistical_model) 模型，如：HMM(Hidden Markov model)、CRF(Conditional random field) 等，這些模型在針對性的任務上效果算不錯，但是人類的語言是不斷變化，只用過去的數據去作模型，處理新的資料準確性是一定會大打折扣，但 Deep Learning 出現令我對 NLP 更有希望，所以我想用 NLP 這個例子去解話一下，我怎樣用 Machine Learning 去解決問題。
 
+
 # 神經網絡的品種
 先認識一下它們的種類，就像我們的神經系統，進化令我們發展出針對不同需要的神經結構，如眼球與大腦之間的神經、聽覺神經、反應神經等，它們的神經元本身可能大同小異，但是結構上是獨自發展來應付它們的天職，但它們可塑性高，神經受損了可透過訓練其他健康的神經去彌補。
-
 我們試從它們解決問題的途徑大致分三大類：
 
 ### 空間性 Spatial：「前饋網絡 Feedforward Neural Network (FNN)」
@@ -46,8 +46,8 @@ comments: true
 它們是可以互相組合成其他的網絡如 Hopfield Network 是種 RNN + Associative Memory 可作時間性的記憶判定、而 Echo State Network / Liquid State Machine 的 cell 是一堆隨機 RNN + FNN 可以應付 Spatio-Temporal Pattern。
 新的網絡架構可能每天都有人在研發中，我只列出我所認識的其中幾種，有些蕓花一現很快被更好的取代了。
 
-# 那種網絡適合我？
 
+# 那種網絡適合我？
 ![那種網絡適合我？](http://indiejoseph.github.io/assets/images/ml2_1.png)
 
 我試用一個可用盡三類網絡的例子去解釋一下，好！我們來做一個思想實驗 Thought Experiment，假設我的項目是手勢辨識（Gesture Classfication）
@@ -73,6 +73,7 @@ Softmax:
 
 但是我們怎知道該選那一個作 FNN 又該選那一個作 RNN ？我的做法是去找近似項目的 Paper，他們多數會比較不同的做法，和總結最好的方法，再到 [Github](http://github.com) 找有沒有人把 Paper 的方法 Implement 出來，因筆者完全看不同 Paper 中的代數公式，沒有能力去 Implement，那只好靠 Github 的神人了。
 PS：其實這例子可以不用加聯想記憶在最後都可能有差不多的效果。
+
 
 # 怎樣開始動手試？
 比較建議 Clone 別人的玩玩，改動一下，看看它的變化，很多 Repo 的 Parameters 未必是最好的，很多開發者都很歡迎你去試。
@@ -108,6 +109,7 @@ PS：其實這例子可以不用加聯想記憶在最後都可能有差不多的
 
 這條數式是非常地簡單及有效率，但它是怎樣做到？現在有三種方法去訓練出 word2vec，慨括而言是給網絡一個或多個詞要它去估下一個可能出現的詞，從中得知詞之間的關係，這個不在這裡講太多。
 當這世界所有東西都化成這樣的數學特徵 Representation，解決問題的方法就變得很簡單，前題是如何訓練出足夠代表性的特徵，似乎又是落在訓練方法的創新性上。
+
 
 # 總結
 神經網絡中每一個神經元其實都是一個特徵，但它代表什麼，我們不用去深究，因現實世界都是一樣，不是所有東西都可解釋，也不是所有東西都只得一個解釋，Deep Learning 就是用不同的學習方法去令網絡中的每一個單元學得最好的特徵，當問題複雜度越高，Supervised Learning 就變得很費時失事，未來的 Machine Learning 都是會向開發更創新的結構和學習方法作方向, 文章中最後一節 NLP 是想鋪路下一篇的文章，RAM (Reasoning, Attention, Memory) 是邏輯對答機的三個重要元素，2015年間 Machine Learning 研究裡其中一個重要成果，這會是做出能用人類語言來和我們溝通的人工智能重大一步。
