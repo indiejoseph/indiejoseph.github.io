@@ -4,4 +4,4 @@ title: About
 ---
 
 ### Joseph Cheng ###
-Full Stack Web Developer and Designer at self employed with over 10 years industry experience.
+I am a Software Engineer with experience in web development. I am passionate about Cantonese Natural Language Processing (NLP), Web3, and Machine Learning.

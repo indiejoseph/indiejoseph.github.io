@@ -2,7 +2,7 @@
 title: 人工智能入門（下篇）
 image: http://indiejoseph.github.io/assets/images/ml1_0.png
 description: 這個系列主要是為一些有興趣人工智能，和想了解這個技術如何可應用到他們 Startup 的人而設，主要著重於應用層面。
-updated: 2016-02-05 14:18
+updated: 2016-02-12 14:18GMT+8
 comments: true
 ---
 
@@ -17,7 +17,7 @@ comments: true
 先認識一下它們的種類，就像我們的神經系統，進化令我們發展出針對不同需要的神經結構，如眼球與大腦之間的神經、聽覺神經、反應神經等，它們的神經元本身可能大同小異，但是結構上是獨自發展來應付它們的天職，但它們可塑性高，神經受損了可透過訓練其他健康的神經去彌補。
 我們試從它們解決問題的途徑大致分三大類：
 
-### 空間性 Spatial：「前饋網絡 Feedforward Neural Network (FNN)」
+## 空間性 Spatial：「前饋網絡 Feedforward Neural Network (FNN)」
 最常用的網絡，衍生的網絡架構非常之多，但大同少異，它的強項都是空間性任務，即是分類。常用的有：
 
 - Multiple Layers Perceptron (MLP)
@@ -28,7 +28,7 @@ comments: true
 
 - Stacked Demonising Autoencoder (SdA)
 
-### 時間性 Temporal：「遞歸神經網絡 Recurrent Neural Network (RNN)」
+## 時間性 Temporal：「遞歸神經網絡 Recurrent Neural Network (RNN)」
 它基本上是和 FNN 一樣的，分別是它把前一次的輸出值作為下一次的輸入值，所以每一次的輸出都受上一次的影響，適合作時間性的任務如 Prediction 預測。
 常用的有：
 
@@ -36,7 +36,7 @@ comments: true
 
 - Long Short Term Memory
 
-### 聚類 Clustering：「聯想記憶 Associative Memories」
+## 聚類 Clustering：「聯想記憶 Associative Memories」
 就如其名都是和記憶有關的任務，它可以參考你給它的輸入值從訓練後的記憶中找出近似的值。
 
 - Self-Organising Maps (SOM)
@@ -47,10 +47,10 @@ comments: true
 新的網絡架構可能每天都有人在研發中，我只列出我所認識的其中幾種，有些蕓花一現很快被更好的取代了。
 
 
-# 那種網絡適合我？
+## 那種網絡適合我？
 ![那種網絡適合我？](http://indiejoseph.github.io/assets/images/ml2_1.png)
 
-我試用一個可用盡三類網絡的例子去解釋一下，好！我們來做一個思想實驗 Thought Experiment，假設我的項目是手勢辨識（Gesture Classfication）
+我試用一個可用盡三類網絡的例子去解釋一下，好！我們來做一個思想實驗 Thought Experiment，假設我的項目是手勢辨識（Gesture Classification）
 
 1. 第一件事是要由視頻中找出那部分是用戶的手，先把視頻分降成一連串畫面序列，再在每一個畫面中去找，這是一個空間中作分類的工作，就如面容辨認一樣，那 FNN 可大派用場，在解像 320 x 240 的視頻畫面中每一個 frame 有共 76800 個 pixels，把這堆 pixels 作為輸入值實在是太大了，那需要為輸入值減減磅，Deep Learning 的 CNN 和 SdA 都是非監督學習 Unsupervised Learning 方法去作降維 Dimensionality Reduction 的前饋網路，假設選用 3 層 CNN，把維度降低到 12 x 12 作為第一組的空間分類工作，得出空間性的特徵。
 
@@ -75,7 +75,7 @@ Softmax:
 PS：其實這例子可以不用加聯想記憶在最後都可能有差不多的效果。
 
 
-# 怎樣開始動手試？
+## 怎樣開始動手試？
 比較建議 Clone 別人的玩玩，改動一下，看看它的變化，很多 Repo 的 Parameters 未必是最好的，很多開發者都很歡迎你去試。
 
 1. 先選一個 Framework，看一看它支援的網絡中，有沒有你需要的。比較多人選用的 Theano、Tensorflow、Torch 都是 Low-Level 的 Framework，Learning Curve 比較高；High-Level 的有 Keras、Blocks 和 Lasagne 等⋯
@@ -84,7 +84,7 @@ PS：其實這例子可以不用加聯想記憶在最後都可能有差不多的
 
 3. 硬件上的要求視乎 Dataset 數量，和網絡複雜程度，用一台 Macbook Pro 都可以玩了，但看你想等多久了。
 
-# NLP（Natural Language Processing）
+## NLP（Natural Language Processing）
 
 過去的 NLP 任務都著重於標註任務，這些任務都是把我們的語言標註起來令電腦明白當中的關係，好讓電腦用數學方法去分析，如你想知道兩段句子意思上的相似度時，只看它們每一隻單字是完全找不著關連，NLP 可讓它知道的是：
 
@@ -111,5 +111,5 @@ PS：其實這例子可以不用加聯想記憶在最後都可能有差不多的
 當這世界所有東西都化成這樣的數學特徵 Representation，解決問題的方法就變得很簡單，前題是如何訓練出足夠代表性的特徵，似乎又是落在訓練方法的創新性上。
 
 
-# 總結
+## 總結
 神經網絡中每一個神經元其實都是一個特徵，但它代表什麼，我們不用去深究，因現實世界都是一樣，不是所有東西都可解釋，也不是所有東西都只得一個解釋，Deep Learning 就是用不同的學習方法去令網絡中的每一個單元學得最好的特徵，當問題複雜度越高，Supervised Learning 就變得很費時失事，未來的 Machine Learning 都是會向開發更創新的結構和學習方法作方向, 文章中最後一節 NLP 是想鋪路下一篇的文章，RAM (Reasoning, Attention, Memory) 是邏輯對答機的三個重要元素，2015年間 Machine Learning 研究裡其中一個重要成果，這會是做出能用人類語言來和我們溝通的人工智能重大一步。
