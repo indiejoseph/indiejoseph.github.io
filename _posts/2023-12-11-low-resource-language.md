@@ -6,7 +6,7 @@ updated: 2023-12-11 12:18GMT
 author: Joseph Cheng
 ---
 
-![大語言模型點樣令廣東話走出低資源語言嘅惡咒](http://indiejoseph.github.io/asssets/images/low-resource-lang.jpg)
+![大語言模型點樣令廣東話走出低資源語言嘅惡咒](https://indiejoseph.github.io/assets/images/low-resource-lang.jpg)
 
 ## 低資源語言（Low-resource language）
 
