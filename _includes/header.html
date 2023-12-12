@@ -1,11 +1,15 @@
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 <aside class="logo">
 
 	{% if page.url == '/index.html' or page.url == '/' %}
-		{% assign link = '/about' %}
-		{% assign prompt = 'About the Author' %}
+	{% assign link = '/about' %}
+	{% assign prompt = 'About the Author' %}
 	{% else %}
-		{% assign link = '/' %}
-		{% assign prompt = 'Back to Home' %}
+	{% assign link = '/' %}
+	{% assign prompt = 'Back to Home' %}
 	{% endif %}
 
 	<a href="{{ link | prepend: site.baseurl }}">
